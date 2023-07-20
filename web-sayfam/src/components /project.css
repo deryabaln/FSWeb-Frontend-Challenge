@@ -1,0 +1,129 @@
+.projects-container{
+    width: 100%;
+    text-align: center;
+    @apply dark:text-white; 
+}
+
+.projects{
+    width: 74%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 7%;
+}
+
+.project{
+    width: 47%;
+    text-align: left;
+    padding-bottom: 32%;
+    position: relative;
+}
+
+.first-project{
+    background: #DDEEFE;
+    @apply dark:bg-project1; 
+}
+
+.second-project{
+    background: #D9F6F1;
+    @apply dark:bg-project2; 
+}
+
+.projects button{
+    width: 100%;
+    margin-top: 130%;
+}
+.project h4{
+    margin: 7%;
+}
+
+.project p{
+    width: 74%;
+    margin-left: 7%;
+}
+
+.content{
+    width: 50%;
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    margin-left: 7%;
+}
+.content h6{
+    padding: 2.5%;
+    border-radius: 50px;
+    background: #FFFFFF;
+    margin-right: 2%;
+    @apply dark:bg-circle-bg; 
+}
+
+ .aTag{
+    margin: 7% 7% 0 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.project a{
+    text-decoration: none;
+    color: black;
+    @apply dark:text-white; 
+}
+
+.project img{
+    width: 100%;
+    position: absolute;
+    top: 55%;
+}
+
+.projects-container button{
+    padding: 1%;
+    border-radius: 50px;
+    background: #EA2678;
+    color: #DDEEFE;
+    margin-bottom: -40%;
+}
+
+@media(max-width:900px) {
+
+    .projects{
+        width: 85%
+    }
+    .project{
+        padding-bottom: 32%;
+    }
+
+    .project img{
+        width: 100%;
+        top: 60%;
+    }
+
+}
+
+@media(max-width:500px) {
+   
+    .projects{
+        width: 100%;
+        flex-direction: column;
+        margin-bottom: 0%;
+    }
+
+    .project{
+        width: 95%;
+        margin: auto;
+        padding-bottom: 65%;
+        margin-bottom: 20%;
+    }
+
+    .projects-container button{
+        margin-top: 5%;
+    }
+     .project img{
+
+        top: 53%;
+     }
+
+     .aTag{
+        margin: 7%;
+    }
+}

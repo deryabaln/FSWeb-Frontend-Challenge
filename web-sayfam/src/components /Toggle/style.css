@@ -1,0 +1,37 @@
+.toggle {
+    height: 24px;
+    width: 55px;
+    border-radius: 50px;
+    background: #E92577;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.toggle.night {
+    background:#000000;
+}
+
+.notch {
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    background: #FFE86E;
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 5px yellow;
+    z-index: 1;
+    transform: translate(31px, 0)
+}
+
+
+.night > .notch {
+    background: none;
+    box-shadow: 0 0 5px;
+    transform: translate(3px, 0);    
+    border-radius: 50%;
+    border-color: #FFE86E;
+    border-width: 0 0 0 6px ;
+    height: 23px;
+    width: 33px;
+}
+
