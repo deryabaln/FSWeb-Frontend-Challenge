@@ -9,6 +9,7 @@ import { ContextObject } from "./hooks/context";
 import useLocalStorage from "./hooks/localStorage";
 import axios from "axios";
 import { data } from "./data";
+import { ToastContainer, toast } from 'react-toastify';
 
 const App = () => {
 
@@ -25,10 +26,78 @@ const App = () => {
     const newLanguage = currentLanguage === "tr" ? "en" : "tr";
     setCurrentLanguage(newLanguage);
     i18n.changeLanguage(newLanguage);
+    if (newLanguage === "en") {
+      toast.success("The page is now viewed in English.", {
+        position: "top-center",
+        autoClose: 1500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }else {
+      toast.success("Sayfa artık Türkçe olarak görüntüleniyor.", {
+        position: "top-center",
+        autoClose: 1500,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
   };
 
   const handleClickDarkMode = () => {
     setDarkMode(!darkMode);
+    if (darkMode === false && currentLanguage === "tr"){
+      toast.success("Gece modu aktifleştirildi.", {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }if (darkMode === false && currentLanguage === "en"){
+      toast.success("The dark mode is active.", {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }if (darkMode === true && currentLanguage === "tr"){
+      toast.success("Gündüz modu aktifleştirildi.", {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }if (darkMode === true && currentLanguage === "en"){
+      toast.success("The light mode is active.", {
+        position: "top-center",
+        autoClose: 1000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+      });
+    }
   };
 
   useEffect(() => {
@@ -60,6 +129,18 @@ const App = () => {
         <Profile />
         <Project />
         <Footer />
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
       </div>
     </ContextObject.Provider>
   );
