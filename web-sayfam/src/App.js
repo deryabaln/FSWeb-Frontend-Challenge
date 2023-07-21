@@ -15,8 +15,11 @@ const App = () => {
 
   const { i18n } = useTranslation();
 
-  const [darkMode, setDarkMode] = useLocalStorage("darkMode", false);
-  const [currentLanguage, setCurrentLanguage] = useLocalStorage("currentLanguage", "en");
+  const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const userLanguage = navigator.language.startsWith("tr") ? "tr" : "en";
+
+  const [darkMode, setDarkMode] = useLocalStorage("darkMode", prefersDarkMode);
+  const [currentLanguage, setCurrentLanguage] = useLocalStorage("currentLanguage", userLanguage);
 
   const [projectData, setProjectData] = useState([]);
   const [skillsData, setSkillsData] = useState([]);
