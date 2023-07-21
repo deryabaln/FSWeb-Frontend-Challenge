@@ -28,25 +28,25 @@ const App = () => {
     i18n.changeLanguage(newLanguage);
     if (newLanguage === "en") {
       toast.success("The page is now viewed in English.", {
-        position: "top-center",
+        position: "top-left",
         autoClose: 1500,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "dark",
+        theme: "colored",
       });
     }else {
       toast.success("Sayfa artık Türkçe olarak görüntüleniyor.", {
-        position: "top-center",
+        position: "top-left",
         autoClose: 1500,
         hideProgressBar: false,
         closeOnClick: true,
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "dark",
+        theme: "colored",
       });
     }
   };
@@ -84,7 +84,7 @@ const App = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "dark",
+        theme: "light",
       });
     }if (darkMode === true && currentLanguage === "en"){
       toast.success("The light mode is active.", {
@@ -95,7 +95,7 @@ const App = () => {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        theme: "dark",
+        theme: "light",
       });
     }
   };
@@ -139,7 +139,6 @@ const App = () => {
           pauseOnFocusLoss
           draggable
           pauseOnHover
-          theme="dark"
         />
       </div>
     </ContextObject.Provider>
