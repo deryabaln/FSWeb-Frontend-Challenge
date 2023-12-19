@@ -11,6 +11,13 @@ const Hero = ({ handleLanguageChange, handleClickDarkMode, darkMode, currentLang
 
   const { t } = useTranslation();
 
+  const redirectToLinkedIn = () => {
+    window.open("https://www.linkedin.com/in/derya-baln/", "_blank");
+  };
+
+  const redirectToGithub = () => {
+    window.open("https://github.com/deryabaln", "_blank");
+  };
 
   return (
     <div>
@@ -36,12 +43,12 @@ const Hero = ({ handleLanguageChange, handleClickDarkMode, darkMode, currentLang
             <div className="contact">
               {!darkMode ?
                 <div className="contact-img">
-                  <FontAwesomeIcon  id="contact" icon={faLinkedinIn} style={{ color: "#000000", }} />
-                  <FontAwesomeIcon id="contact" icon={faGithub} />
+                  <FontAwesomeIcon  id="contact" icon={faLinkedinIn} style={{ color: "#000000", }} onClick={redirectToLinkedIn} />
+                  <FontAwesomeIcon id="contact" icon={faGithub} onClick={redirectToGithub}/>
                 </div> :
                 <div className="contact-img">
-                  <FontAwesomeIcon id="contact" icon={faLinkedinIn} style={{ color: "#ffffff", }} />
-                  <FontAwesomeIcon id="contact" icon={faGithub} style={{ color: "#ffffff", }} />
+                  <FontAwesomeIcon id="contact" icon={faLinkedinIn} style={{ color: "#ffffff", }} onClick={redirectToLinkedIn} />
+                  <FontAwesomeIcon id="contact" icon={faGithub} style={{ color: "#ffffff", }} onClick={redirectToGithub} />
                 </div>}
 
               <p className=" dark:text-white pb-5 ">Currently <span style={{ color: "#AF0C48" }}>Freelancing </span>for <span style={{ color: "#AF0C48" }}>UX, UI, & Web Design</span> Project .
