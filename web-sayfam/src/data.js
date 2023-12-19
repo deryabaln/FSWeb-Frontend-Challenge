@@ -59,18 +59,18 @@ export const data = {
 
         },
         {
-            "skillName": "NODE",
-            "skillImage": "Resim-node.png"
+            "skillName": "JAVA",
+            "skillImage": "Resim-java.png"
 
         },
         {
-            "skillName": "VS CODE",
-            "skillImage": "Resim-vs.png"
+            "skillName": "SPRİNG BOOT",
+            "skillImage": "Resim-spring.png"
 
         },
         {
-            "skillName": "FİGMA",
-            "skillImage": "Resim-figma.png"
+            "skillName": "PYTHON",
+            "skillImage": "Resim-python.png"
 
         }
     ]

@@ -26,8 +26,8 @@ const Profile = () => {
                 <div className="about">
                     <h3 className="dark:text-skills-h1">{t("about")}</h3>
                     <span className="blue-object"></span>
-                    <p className="dark:text-skills-h1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.</p>
-                    <p className="dark:text-skills-h1">Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!</p>
+                    <p className="dark:text-skills-h1">{t("personal information1")}</p>
+                    <p className="dark:text-skills-h1">{t("personal information2")}</p>
                 </div>
             </div>
         </div>
@@ -35,4 +35,3 @@ const Profile = () => {
 };
 
 export default Profile;
-

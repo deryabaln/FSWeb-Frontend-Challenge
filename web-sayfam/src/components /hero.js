@@ -45,7 +45,7 @@ const Hero = ({ handleLanguageChange, handleClickDarkMode, darkMode, currentLang
                 </div>}
 
               <p className=" dark:text-white pb-5 ">Currently <span style={{ color: "#AF0C48" }}>Freelancing </span>for <span style={{ color: "#AF0C48" }}>UX, UI, & Web Design</span> Project .
-                Invite me to join your team - <span style={{ color: "#AF0C48" }}>pratamaiosi@gmail.com</span></p>
+                Invite me to join your team - <span style={{ color: "#AF0C48" }}>deryabalin@gmail.com</span></p>
             </div>
           </div>
           <div className="pink-object"></div>

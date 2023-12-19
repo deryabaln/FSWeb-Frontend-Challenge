@@ -7,7 +7,7 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
-      "first text": "I’m Almila. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet! ",
+      "first text": "I’m Derya.I'm a junior full stack developer who combines my passion for technology with front and back-end development. I enjoy crafting engaging web interfaces where users interact while also delving into the mysteries of data and bringing systems to life. My openness to learning and eagerness to improve align perfectly with my excitement to learn new things with each new project.",
       "LIGHT MODE": "LIGHT MODE",
       "DARK MODE": "DARK MODE",
       "hi": "Hi! 👋",
@@ -32,13 +32,15 @@ const resources = {
       "View on Github": "View on Github",
       "go app": "Go to App ->",
       "lets": "Let’s work together on your next product.",
-      "personal blog": "Personal Blog"
+      "personal blog": "Personal Blog",
+      "personal information1": "I completed my undergraduate education in Nutrition and Dietetics at Kırklareli University. Discovering my interest in software development, I applied for the Workintech Full Stack Developer training. Having completed both the Frontend and Backend stages, I successfully finished the Full Stack Developer training.",
+      "personal information2": "You can review the projects I worked on during the training via my GitHub link. Additionally, I am currently continuing my education in Computer Programming at Ankara University."
 
     }
   },
   tr: {
     translation: {
-      "first text": "Ben Almila. Ben bir full-stack geliştiricisiyim. Sağlam ve ölçeklenebilir önyüz ürünleri üretebilirim. Tanışalım!",
+      "first text": "Ben Derya. Teknolojiye olan tutkumu ön ve arka uç geliştirmeyle birleştiren bir junior full stack developerım. Kullanıcıların etkileşimde bulunduğu harika web arayüzleri oluşturmakla birlikte, verilerin gizeminde dolaşmayı ve sistemleri hayata geçirmeyi seviyorum. Öğrenmeye ve kendimi geliştirmeye açık olmam, her yeni projede yeni şeyler öğrenmeye hevesli olmamla birleşiyor.",
       "LIGHT MODE": "GÜNDÜZ MODU",
       "DARK MODE": "GECE MODU",
       "hi": "Merhaba! 👋",
@@ -63,7 +65,10 @@ const resources = {
       "View on Github": "Github'ta Görüntüle",
       "go app": "Uygulamaya Git ->",
       "lets": "Hadi sonraki projende birlikte çalışalım.",
-      "personal blog": "Kişisel Blog"
+      "personal blog": "Kişisel Blog",
+      "personal information1": "Lisans eğitimimi Kırklareli Üniversitesi Beslenme Ve Diyetetik Bölümünden mezun olarak tamamladım. Yazılım geliştirme alanına ilgimi farketmem ile Workintech Full Stack Developer eğitimine başvurdum. Frontend ve Backend aşamalarını geçerek Full Stack Developer eğitimini tamamladım.",
+      "personal information2": "Eğitim boyunca yaptığım çalışmaları GitHub linkimden inceleyebilirsiniz. Aynı zamanda Ankara Üniversitesi Bilgisayar Programlama bölümünde eğitimime devam etmekteyim."
+
 
 
 
