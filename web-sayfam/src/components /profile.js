@@ -21,7 +21,7 @@ const Profile = () => {
                     <h6>{t("education")}</h6>
                     <p>Kırklareli Ünv. Beslenme ve Diyetetik Lisans, 2020</p>
                     <h6>{t("role")}</h6>
-                    <p>Frontend, UI</p>
+                    <p>Full Stack (Frontend, UI, Backend)</p>
                 </div>
                 <div className="about">
                     <h3 className="dark:text-skills-h1">{t("about")}</h3>
