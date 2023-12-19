@@ -7,7 +7,7 @@ import { initReactI18next } from "react-i18next";
 const resources = {
   en: {
     translation: {
-      "first text": "I’m Derya.I'm a junior full stack developer who combines my passion for technology with front and back-end development. I enjoy crafting engaging web interfaces where users interact while also delving into the mysteries of data and bringing systems to life. My openness to learning and eagerness to improve align perfectly with my excitement to learn new things with each new project.",
+      "first text": "I’m Derya. I'm a junior full stack developer who combines my passion for technology with front and back-end development. I enjoy crafting engaging web interfaces where users interact while also delving into the mysteries of data and bringing systems to life. My openness to learning and eagerness to improve align perfectly with my excitement to learn new things with each new project.",
       "LIGHT MODE": "LIGHT MODE",
       "DARK MODE": "DARK MODE",
       "hi": "Hi! 👋",
